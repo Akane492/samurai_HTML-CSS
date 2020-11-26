@@ -136,7 +136,10 @@ h2 span {
     width: 50%;
     text-align: left;
     font-size: 22px;
-    margin: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
  
 }
 .menu-info2 {
@@ -144,7 +147,11 @@ h2 span {
     width: 50%;
     text-align: left;
     font-size: 22px;
-    margin: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    
 }
 table, td {
     border: none;
