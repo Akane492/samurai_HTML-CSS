@@ -304,7 +304,7 @@ footer p {
     }
     .grid {
         display: grid;
-        grid-template-columns: repeat(2,minmax(200px, 1fr));
+        grid-template-columns: repeat(2,minmax(150px, 1fr));
     }
     .item {
         margin-top: 10px;
