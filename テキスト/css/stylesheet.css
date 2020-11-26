@@ -1,0 +1,402 @@
+@charset "UTF-8";
+
+/*
+-------------------------共通*/
+body {
+    font-family:"Yu Gothic Medium", "遊ゴシック Medium", YuGothic, "遊ゴシック体", "ヒラギノ角ゴ Pro W3","sanf-serif";
+    color: #432;
+    line-height: 1.7;
+    padding: 0;
+	margin: 0;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+
+/*
+------------------------handy*/
+@media (max-width: 600px) {
+    .content-title {
+        font-size: 2.5rem;
+    }
+    .page-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* header */
+    .main-nav {
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+    .main-nav li {
+        margin: 0 20px;
+        background: blue;
+    }
+
+    /* top */
+    .top-content {
+        margin-top: 20%;
+    }
+
+    /* news */
+    .news-contents {
+        flex-direction: column;
+    }
+    article,
+    aside {
+        width: 100%;
+    }
+    #news .page-title {
+        margin-top: 30px;
+    }
+    aside {
+        margin-top: 60px;
+    }
+    .info {
+        margin-bottom: 30px;
+    }
+    .info-date {
+        width: 70px;
+        height: 70px;
+        font-size: 1rem;
+    }
+    .info-date span {
+        font-size: 0.875rem;
+        padding-top: 2px;
+    }
+    .info-title {
+        font-size: 1.375rem;
+    }
+    .info-cat {
+        font-size: 0.875rem;
+        margin-top: 10px;
+    }
+    .info-title,
+    .info-cat {
+        margin-left: 80px;
+    }
+
+    /* menu */
+    .menu-content {
+        margin-top: 20%;
+    }
+
+    /* contact */
+    #contact .page-title {
+        margin-top: 40px;
+    }
+
+    /* フォーム */
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        max-width: 100%;
+    }
+
+    /* 店舗情報・地図 / SNS */
+    #location .wrapper,
+    #sns .wrapper {
+        flex-direction: column;
+    }
+    .location-info,
+    .location-map,
+    .sns-box {
+        width: 100%;
+    }
+    .sns-box {
+        margin-bottom: 30px;
+    }
+}
+
+/* 
+------------------------header  */
+#top {
+    background-image: url(../images/top/main-bg.jpg);
+    min-height: 100vh;
+}
+
+.bg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+.logo {
+    width: 210px;
+    margin-top: 14px;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+}
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.main-nav {
+    list-style: none;
+    display: flex;
+    font-size: 1.25rem;
+    margin-top: 34px;
+}
+.main-nav li {
+    margin-left: 36px;
+}
+.main-nav a {
+    color: #432;
+}
+.main-nav a:hover {
+    color: #0bd;
+}
+
+/*
+-----------------------top-content*/
+.top-content {
+    text-align: center;
+    margin-top: 15%;
+}
+.top-content p {
+    font-size: 1.125rem;
+    margin: 10px 0 45px;
+}
+.content-title {
+    font-size: 5rem;
+    font-family: "Philosopher", serif;
+    font-weight: normal;
+    text-transform: none;
+}
+.button {
+    background: #0bd;
+    color: #fff;
+    font-size: 1.375rem;
+    padding: 15px 30px;
+    border-radius: 5px;
+}
+.button:hover {
+    background: #0090aa;
+}
+
+/*
+----------------------news*/
+#news {
+    background-image: url(../images/news/news-bg.jpg);
+    height: 350px;
+    margin-bottom: 50px;
+}
+.content-title {
+    text-align: center;
+}
+
+/*
+----------------------news-contents article*/
+article {
+    width: 74%;
+    position: relative;
+    padding-top: 4px;
+}
+.news-contents {
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: space-between;
+}
+.info-title {
+    font-family: "Yu Mincho", "YuMincho", serif;
+    font-weight: normal;
+    font-size: 32px;
+}
+.info-title,
+.info-category {
+    margin-left: 120px;
+}
+.info-date {
+    background: #0bd;
+    color: #fff;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 1.625rem;
+    position: absolute;
+    top: 0;
+    padding-top: 10px;
+}
+.info-date span {
+    width: 60%;
+    font-size: 16px;
+    border-top: 1px rgba(255,255,255,.5) solid;
+    padding-top: 6px;
+    margin: 0 auto;
+    display: block;
+}
+article img {
+    margin: 40px 0 20px;
+}
+article p {
+    margin-bottom: 16px;
+}
+
+/*
+----------------------news-content aside*/
+aside {
+    width: 22%;
+}
+.sub-title {
+    font-size: 1.375rem;
+    font-weight: normal;
+    padding: 0 8px 8px;
+    border-bottom: 2px #0bd solid;
+}
+
+aside p {
+    padding: 12px 10px;
+}
+.sub-menu {
+    margin-bottom: 60px;
+}
+.sub-menu li {
+    border-bottom: 1px #ddd solid;
+}
+.sub-menu a {
+    color: #432;
+    padding: 10px;
+    display: block;
+}
+.sub-menu a:hover {
+    color: #0bd;
+}
+
+/*
+----------------------menu */
+#menu {
+    background-image: url(../images/menu/menu-bg.jpg);
+    min-height: 100vh;
+}
+
+.menu-content {
+    max-width: 560px;
+    margin-top: 16%;
+}
+.menu-content p {
+    font-size: 1.125rem;
+    margin: 10px 0 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3,minmax(240px, 1fr));
+    margin-top: 6%;
+    margin-bottom: 50px;
+}
+
+/*
+----------------------Contact*/
+#contact {
+    background-image: url(../images/contact/contact-bg.jpg);
+    min-height: 100vh;
+}
+form div {
+    margin-bottom: 14px;
+}
+label {
+    font-size: 1.125rem;
+    margin-bottom: 10px;
+    display: block;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    background: rgba(255,255,255,.5);
+    border: 1px #fff solid;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+}
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    max-width: 240px;
+}
+textarea {
+    width: 100%;
+    max-width: 480px;
+    height: 6rem;
+}
+input[type="submit"] {
+    border: none;
+    cursor: pointer;
+    line-height: 1;
+}
+#contact-title {
+    text-align: left;
+}
+#location {
+    padding: 4% 0;
+}
+#location .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.location-info {
+    width: 22%;
+}
+.location-info p {
+    padding: 12px 10px;
+}
+.location-map {
+    width: 74%;
+}
+iframe {
+    width: 100%;
+}
+#sns {
+    padding: 4% 0;
+    background: #faf7f0;
+}
+#sns .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+#sns .sub-title {
+    margin-bottom: 30px;
+}
+.sns-box {
+    width: 30%;
+}
+/*
+----------------------footer*/
+footer {
+    background: #432;
+    text-align: center;
+    padding: 26px 0;
+}
+footer p {
+    color: #fff;
+    font-size: 0.875rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
