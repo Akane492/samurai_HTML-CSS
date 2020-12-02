@@ -1,0 +1,300 @@
+@charset "UTF-8";
+
+html {
+    font-family: "Yu Gothic Medium", "遊ゴシック Medium", YuGothic, "遊ゴシック体", "ヒラギノ角ゴ Pro W3","sanf-serif";
+}
+
+/*
+----------header */
+.container {
+    font-family: "Philosopher","Sawarabi Mincho";
+    color: #1f2f54;
+}
+
+/*
+----------campaign */
+h2 {
+    position: relative;
+    margin: 30px;
+    text-align: center;
+}
+
+h2:before,
+h2:after {
+  position: absolute;
+  z-index: 0;
+  bottom: -10px;
+  display: block;
+  content: '';
+  border: 1em solid #c8ae74;
+}
+
+h2:before {
+  left: -30px;
+  border-left-width: 15px;
+  border-left-color: transparent;
+}
+
+h2:after {
+  right: -30px;
+  border-right-width: 15px;
+  border-right-color: transparent;
+}
+
+h2 span {
+  position: relative;
+  z-index: 1;
+  display: block;
+  padding: 1rem 2rem;
+  color: #fff;
+  background: #D4B572;
+  font-family: 'Tangerine', cursive;
+  font-size: 40px;
+}
+
+h2 span:before,
+h2 span:after {
+  position: absolute;
+  bottom: -10px;
+  display: block;
+  width: 10px;
+  height: 10px;
+  content: '';
+  border-style: solid;
+  border-color: #ae9764 transparent transparent transparent;
+}
+
+h2 span:before {
+  left: 0;
+  border-width: 10px 0 0 10px;
+}
+
+h2 span:after {
+  right: 0;
+  border-width: 10px 10px 0 0;
+}
+
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table tr{
+  border-bottom: solid 2px white;
+}
+
+table tr:last-child{
+  border-bottom: none;
+}
+
+table th{
+  position: relative;
+  text-align: left;
+  width: 30%;
+  background-color: #e2917f;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+table th:after{
+  display: block;
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  top:calc(50% - 10px);
+  right:-10px;
+  border-left: 10px solid #e2917f;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
+table td{
+  width: 70%;
+  text-align: left;
+  background-color: #eee;
+  padding: 10px 0;
+}
+
+
+/*
+----------concept */
+h3 {
+  font-family: 'Tangerine', cursive;
+  font-size: 60px;
+  color: #D4B572;
+  position: relative;
+  text-align: center;
+}
+
+h3:before {
+  position: absolute;
+  bottom: -10px;
+  width: 130px;
+  height: 2px;
+  content: '';
+  border-radius: 3px;
+  background: #D4B572;
+}
+
+.cover-img {
+	min-height: 100vh;
+	display: table;
+	width: 100%;
+	background-size: cover;
+}
+.concept-text {
+  background: #D4B572;
+}
+.concept-text2 {
+  font-size: 15px;
+}
+.concept-text3 {
+  font-size: 11px;
+}
+.card-title-concept {
+  color: #e2917f;
+  font-size: 18px;
+}
+.card-text-concept {
+  font-size: 13px;
+}
+
+/*
+---------plan */
+.plan-title {
+  font-family: 'Tangerine', cursive;
+  font-size: 60px;
+  color: #D4B572;
+  position: relative;
+  text-align: center;
+}
+.plan-title:before {
+  position: absolute;
+  bottom: -10px;
+  width: 100px;
+  height: 2px;
+  content: '';
+  border-radius: 3px;
+  background: #D4B572;
+}
+.card-title {
+  color: #e2917f;
+}
+.card-text {
+  font-size: 13px;
+  
+}
+
+/*
+----------gallery */
+.gallery-title {
+  font-family: 'Tangerine', cursive;
+  font-size: 60px;
+  color: #D4B572;
+  position: relative;
+  text-align: center;
+}
+.gallery-title:before {
+  position: absolute;
+  bottom: -10px;
+  width: 120px;
+  height: 2px;
+  content: '';
+  border-radius: 3px;
+  background: #D4B572;
+}
+.bg2 {
+  min-height: 80vh;
+}
+.gallery-text {
+  background: #D4B572
+}
+.gallery-text2 {
+  font-size: 13px;
+}
+
+/*
+----------contact */
+.contact-title {
+  font-family: 'Tangerine', cursive;
+  font-size: 60px;
+  color: #D4B572;
+  position: relative;
+  text-align: center;
+}
+.contact-title:before {
+  position: absolute;
+  bottom: -10px;
+  width: 130px;
+  height: 2px;
+  content: '';
+  border-radius: 3px;
+  background: #D4B572;
+}
+.contact-form {
+  color: #e2917f;
+  font-size: 18px;
+}
+.btn {
+  background: #e2917f;
+  color: #fff;
+  font-size: 18px;
+}
+input[type="text"],
+input[type="mail"],
+.form-control {
+    background: rgba(255,255,255,.5);
+    border: 1px #fff solid;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+}
+.bg3 {
+  background-position: right 50% bottom 10%;;
+}
+
+/*
+----------footer */
+footer {
+    text-align: center;
+    color: #1f2f54;
+    padding: 26px 0;
+}
+footer p {
+    font-size: 0.875rem;
+}
+
+
+
+
+
+
+
+
+
+/*
+----------mobile*/
+@media (max-width: 600px) {
+  .news-info {
+    font-size: 14px;
+  }
+  .news-date {
+    font-size: 16px;
+  }
+  
+  /* concept */
+  .cover-img {
+		height: 300px;
+	}
+}
+
+
+
+
+
+
+
+
+
